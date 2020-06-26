@@ -16,11 +16,11 @@ const trigger = [
 //2
 ["protest", "march"],
 //3
-["systemic racism", "educate"],
+["systemic","racism", "educate"],
 //6
-["thanks", "thank you"],
+["thanks"],
 //7
-["bye", "good bye", "goodbye"]
+["bye", "goodbye",]
 ];
 
 const reply = [
@@ -42,11 +42,9 @@ const reply = [
 ];
 
 const alternative = [
-  "Same",
-  "Go on...",
-  "Try again",
-  "I'm listening...",
-  "Bro..."
+  "Try to talk about racial injustice",
+  "One word please"
+  
 ];
 
 function compare(triggerArray, replyArray, text) {
