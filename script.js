@@ -16,7 +16,7 @@ const trigger = [
 //2
 ["protest", "march"],
 //3
-["happy", "good", "well", "fantastic", "cool"],
+["systemic racism", "educate"],
 //6
 ["thanks", "thank you"],
 //7
@@ -72,5 +72,19 @@ function output(input) {
   } else {
     product = alternative[Math.floor(Math.random() * alternative.length)];
   }
-    document.getElementById("input").value = "";
+  addChat(input,product);
+ 
+}
+function addChat(input, product) {
+  const mainDiv = document.getElementById("main");
+  let userDiv = document.createElement("div");
+  userDiv.id = "user";
+  userDiv.innerHTML = `You: <span id="user-response">${input}</span>`;
+  mainDiv.appendChild(userDiv);
+
+  let botDiv = document.createElement("div");
+  botDiv.id = "bot";
+  botDiv.innerHTML = `Chatbot: <span id="bot-response">${product}</span>`;
+  mainDiv.appendChild(botDiv);
+
 }
